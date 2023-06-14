@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "marstons-analysis"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "marstons_analysis"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.0.2"
+seaborn = "^0.12.2"
+pyarrow = "^12.0.0"
+geopandas = "^0.13.2"
+h3 = "^3.7.6"
+networkx = "^3.1"
+h3pandas = "^0.2.4"
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.2"
+ipykernel = "^6.23.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
